@@ -27,12 +27,12 @@ public class BuscadorSalon extends AppCompatActivity {
         int numero = Integer.parseInt(miEdit.getText().toString());
 
         if ( numero == adivina) {
-            miEti.setText("Tan de buenas, ese sí era");
+            miEti.setText("Tan de buenas, ese sí era" + adivina);
         }else{
             if (numero>adivina) {
-                miEti.setText("Bájele un poquito ");
+                miEti.setText("Bájele un poquito " + adivina);
             }else{
-                miEti.setText("Súbale un poquito");
+                miEti.setText("Súbale un poquito" + adivina);
             }
 
         }
